@@ -1,0 +1,21 @@
+{
+  "name": "ftpgames",
+  "version": "0.0.0",
+  "main": "dist/my-app.es.js",
+  "exports": {
+    ".": "./dist/my-app.es.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lit": "^2.0.0"
+  },
+  "devDependencies": {
+    "vite": "^2.6.4"
+  }
+}
