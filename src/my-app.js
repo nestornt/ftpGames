@@ -22,6 +22,8 @@ export class MyApp extends LitElement {
       justify-content: center;
       gap: 12px;
       padding-top: 1%;
+      padding-right: 10%;
+      padding-left: 10%;
     }
     .card div{
       box-shadow: 0px 1.5px 0px 0px rgba(138, 143, 197, 1);
@@ -33,6 +35,7 @@ export class MyApp extends LitElement {
     }
     .card div:hover {
       box-shadow: 0 8px 16px 8px rgba(201, 203, 232, 0);
+      cursor: pointer;
     }
 
     .header {
@@ -118,6 +121,7 @@ export class MyApp extends LitElement {
     })
 
     this.games = await resp.json()
+    console.log(this.games)
     this.loaded = true;
   }
 }
