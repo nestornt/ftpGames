@@ -96,7 +96,7 @@ export class MyApp extends LitElement {
             </div>
           `
           )
-          : html `<button @click=${() => this.apiCall("mmorpg")}>Call the Api</button>`
+          : this.apiCall()
       }
       </div>
     `
